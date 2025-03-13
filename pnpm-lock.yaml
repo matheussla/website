@@ -26,6 +26,9 @@ dependencies:
   geist:
     specifier: 1.2.2
     version: 1.2.2(next@14.2.0-canary.62)
+  lucide-react:
+    specifier: ^0.479.0
+    version: 0.479.0(react@18.2.0)
   next:
     specifier: canary
     version: 14.2.0-canary.62(react-dom@18.2.0)(react@18.2.0)
@@ -776,6 +779,14 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+    dev: false
+
+  /lucide-react@0.479.0(react@18.2.0):
+    resolution: {integrity: sha512-aBhNnveRhorBOK7uA4gDjgaf+YlHMdMhQ/3cupk6exM10hWlEU+2QtWYOfhXhjAsmdb6LeKR+NZnow4UxRRiTQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /markdown-extensions@1.1.1:
