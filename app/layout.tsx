@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Matheus Abreu Dev',
     description: 'Matheus Abreu Portfolio',
     url: baseUrl,
-    images: '/images/photo.jpeg',
+    images: '/images/node.webp',
     siteName: 'My Portfolio',
     locale: 'en_US',
     type: 'website',
