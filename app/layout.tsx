@@ -4,7 +4,7 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
+import { Navbar, Footer, LanguageProvider } from './components'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
@@ -14,26 +14,6 @@ export const metadata: Metadata = {
     template: '%s | Matheus Abreu Dev',
   },
   description: 'Matheus Abreu Portfolio',
-  openGraph: {
-    title: 'Matheus Abreu Dev',
-    description: 'Matheus Abreu Portfolio',
-    url: baseUrl,
-    images: '/images/node.jpg',
-    siteName: 'My Portfolio',
-    locale: 'en_US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
 }
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
@@ -53,12 +33,15 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+        <LanguageProvider> {/* ✅ Wrap everything in the provider */}
+          <Navbar />
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            {children}
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </LanguageProvider>
       </body>
     </html>
   )

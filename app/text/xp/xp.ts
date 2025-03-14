@@ -4,10 +4,10 @@ export const experiences = [
     company: 'Procer',
     date: 'Jun 2024 – Present',
     description: {
-      en: 'I developed technological solutions to automate agricultural services by building scalable APIs with Node.js and TypeScript, designing optimized PostgreSQL databases, implementing RabbitMQ for efficient messaging, leveraging AWS for cloud-based scalability and automation, and integrating software seamlessly with agricultural automation devices.',
-      pt: 'Desenvolvi soluções tecnológicas para automatizar serviços agrícolas, criando APIs escaláveis com Node.js e TypeScript, projetando bancos de dados PostgreSQL otimizados, implementando RabbitMQ para mensageria eficiente, aproveitando AWS para escalabilidade e automação na nuvem, e integrando softwares de forma integrada com dispositivos de automação agrícola.'
+      en: 'I developed technological solutions to automate agricultural services by building scalable APIs with Node.js and TypeScript, designing optimized PostgreSQL databases, implementing RabbitMq for efficient messaging, leveraging AWS for cloud-based scalability and automation, and integrating software seamlessly with agricultural automation devices.',
+      pt: 'Desenvolvi soluções tecnológicas para automatizar serviços agrícolas, criando APIs escaláveis com Node.js e TypeScript, projetando bancos de dados PostgreSQL otimizados, implementando RabbitMq para mensageria eficiente, aproveitando AWS para escalabilidade e automação na nuvem, e integrando softwares de forma integrada com dispositivos de automação agrícola.'
     },
-    skills: ['Node.js', 'TypeScript', 'AWS', 'RabbitMQ', 'PostgreSQL', 'Docker'],
+    skills: ['Node.js', 'TypeScript', 'AWS', 'RabbitMq', 'PostgreSQL', 'Docker', 'Nest.js'],
   },
   {
     title: 'Senior Software Engineer',
@@ -17,7 +17,7 @@ export const experiences = [
       en: 'I led the development of applications integrating both relational and non-relational databases. In addition to working on the maintenance and evolution of legacy services, I was responsible for technical documentation using Swagger and the implementation of comprehensive automated tests. In terms of architecture, I applied advanced concepts such as Domain-Driven Design (DDD) and SOLID principles to enhance the quality and scalability of the systems. I also played an active role in addressing demands and errors, collaborating effectively with the team to swiftly identify and resolve issues.',
       pt: 'Liderei o desenvolvimento de aplicações integrando bancos de dados relacionais e não relacionais. Além de trabalhar na manutenção e evolução de serviços legados, fui responsável pela documentação técnica utilizando Swagger e pela implementação de testes automatizados abrangentes. Em termos de arquitetura, apliquei conceitos avançados como Domain-Driven Design (DDD) e os princípios SOLID para aprimorar a qualidade e escalabilidade dos sistemas. Também desempenhei um papel ativo na resolução de demandas e erros, colaborando efetivamente com a equipe para identificar e solucionar problemas rapidamente.'
     },
-    skills: ['TypeScript', 'PostgreSQL', 'Node.js', 'Prisma', 'Azure', 'RabbitMq'],
+    skills: ['TypeScript', 'PostgreSQL', 'Node.js', 'Prisma', 'Azure', 'RabbitMq', 'Kubernetes', 'Nest.js'],
   },
   {
     title: 'Senior Software Engineer',
@@ -27,7 +27,7 @@ export const experiences = [
       en: 'Worked on this crypto project, developing and deploying lambda functions in a serverless environment to enable efficient and scalable data processing, as well as business logic execution. I created and maintained GraphQL services with Node.js to provide flexible and efficient APIs for seamless data retrieval and manipulation. I implemented asynchronous communication patterns, such as message queues, to allow efficient data processing and integration between services. I optimized the system scalability by designing and implementing solutions capable of handling increased loads and accommodating future growth.',
       pt: 'Trabalhei neste projeto de criptomoedas, desenvolvendo e implantando funções lambda em um ambiente serverless para permitir um processamento de dados eficiente e escalável, bem como a execução de lógica de negócios. Criei e mantive serviços GraphQL com Node.js para fornecer APIs flexíveis e eficientes para recuperação e manipulação integrada de dados. Implementei padrões de comunicação assíncrona, como filas de mensagens, para possibilitar um processamento de dados eficiente e a integração entre serviços. Otimizei a escalabilidade do sistema projetando e implementando soluções capazes de lidar com cargas aumentadas e acomodar o crescimento futuro.'
     },
-    skills: ['Node.js', 'Typescript', 'GraphQL', 'Prisma', 'Vue.js', 'AWS Lambda', 'Docker', 'Elastic Search', 'DynamoDb', 'AWS SQS'],
+    skills: ['Node.js', 'TypeScript', 'GraphQL', 'Prisma', 'Vue.js', 'AWS Lambda', 'Docker', 'Kubernetes', 'Elastic Search', 'DynamoDb', 'AWS SQS'],
   },
   {
     title: 'Senior Software Engineer',
@@ -37,7 +37,7 @@ export const experiences = [
       en: 'I led the refactoring efforts of our legacy systems, identifying areas for improvement and implementing modern solutions to enhance their performance and maintainability. I designed and developed scalable and robust system architectures capable of handling increased loads and ensuring high availability. I collaborated with multifunctional teams to integrate internal and external services, ensuring seamless communication and data exchange between systems. I analyzed and optimized existing codebases to improve performance, reliability, and maintenance. I implemented and enforced coding standards and best practices to ensure code quality and maintainability across the organization. I conducted code reviews and provided constructive feedback to ensure a high-quality codebase. I collaborated with stakeholders to understand their needs and translated them into scalable and efficient technical solutions.I led the refactoring efforts of our legacy systems, identifying areas for improvement and implementing modern solutions to enhance their performance and maintainability. I designed and developed scalable and robust system architectures capable of handling increased loads and ensuring high availability. I collaborated with multifunctional teams to integrate internal and external services, ensuring seamless communication and data exchange between systems. I analyzed and optimized existing codebases to improve performance, reliability, and maintenance. I implemented and enforced coding standards and best practices to ensure code quality and maintainability across the organization. I conducted code reviews and provided constructive feedback to ensure a high-quality codebase. I collaborated with stakeholders to understand their needs and translated them into scalable and efficient technical solutions.',
       pt: 'Liderei os esforços de refatoração dos nossos sistemas legados, identificando áreas para melhoria e implementando soluções modernas para aprimorar seu desempenho e manutenibilidade. Projetei e desenvolvi arquiteturas de sistemas escaláveis e robustas, capazes de lidar com cargas aumentadas e garantir alta disponibilidade. Colaborei com equipes multifuncionais para integrar serviços internos e externos, assegurando comunicação e troca de dados sem interrupções entre os sistemas. Analisei e otimizei as bases de código existentes para melhorar o desempenho, a confiabilidade e a manutenção. Implementei e apliquei padrões de codificação e melhores práticas para garantir a qualidade e a manutenibilidade do código em toda a organização. Realizei revisões de código e forneci feedback construtivo para assegurar uma base de código de alta qualidade. Colaborei com as partes interessadas para entender suas necessidades e traduzi-las em soluções técnicas escaláveis e eficientes. '
     },
-    skills: ['Node.js', 'Typescript', 'Vue.js', 'AWS Lambda', 'MongoDb', 'RabbitMq'],
+    skills: ['Node.js', 'TypeScript', 'Vue.js', 'AWS Lambda', 'MongoDb', 'RabbitMq'],
   },
   {
     title: 'Software Engineer at GetNet',
@@ -67,6 +67,6 @@ export const experiences = [
       en: 'My responsibilities included website maintenance and user support. For this, I used technologies like JavaScript for client-side logic, CSS for styling, and HTML for content structuring. These tools allowed me to make updates to the website and efficiently respond to user requests.',
       pt: 'Minhas responsabilidades incluíam a manutenção do website e o suporte aos usuários. Para isso, utilizei tecnologias como JavaScript para a lógica do lado do cliente, CSS para a estilização e HTML para a estruturação do conteúdo. Essas ferramentas me permitiram atualizar o site e responder de forma eficiente às solicitações dos usuários.'
     },
-    skills: ['Javascript', 'Node.js', 'CSS'],
+    skills: ['Javascript', 'Node.js'],
   },
 ];

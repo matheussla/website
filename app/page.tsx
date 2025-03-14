@@ -2,37 +2,23 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Globe } from 'lucide-react';
-import { experiences } from './text/xp'
+import { experiences, skillDescriptions } from './text/xp'
 import { summary } from './text/summary'
+import { useLanguage } from './components/languageContext'
 
-const skills = Array.from(
-  new Set(experiences.flatMap((exp) => exp.skills))
-)
+const skills = Array.from(new Set(experiences.flatMap((exp) => exp.skills)))
+
 export default function Page() {
+  const { language } = useLanguage() 
   const [openIndex, setOpenIndex] = useState(0)
-  const [language, setLanguage] = useState('en')
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null) // ✅ Track hovered skill
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === 'en' ? 'pt' : 'en'))
-  }
-
   return (
     <section>
-      <nav className="flex justify-end py-4">
-        <button
-          onClick={toggleLanguage}
-          className="flex items-center gap-1 text-white py-1 px-3 rounded-full text-sm cursor-pointer hover:bg-gray-400 hover:text-gray-900 transition-colors duration-200"
-        >
-          {language === 'en' ? 'PT' : 'EN'}
-          <Globe size={16} />
-        </button>
-      </nav>
-
       <div className="flex items-center justify-between mb-4">
         <Image
           src="/images/photo.jpeg"
@@ -47,20 +33,31 @@ export default function Page() {
         </div>
       </div>
 
-      <p className="mb-4">
-        {`${summary[language]}`}
-      </p>
+      <p className="mb-4">{summary[language]}</p>
 
-      <div className="my-8">
+      <div className="my-8 relative">
         <h3 className="text-xl font-semibold mb-4">Principal Skills</h3>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 relative">
           {skills.map((skill, idx) => (
-            <span
+            <div 
               key={idx}
-              className="bg-gray-200 text-gray-700 py-1 px-3 rounded-full text-sm cursor-pointer hover:bg-gray-400 hover:text-gray-900 transition-colors duration-200"
+              className="relative"
+              onMouseEnter={() => setHoveredSkill(skill)} // ✅ Show tooltip on hover
+              onMouseLeave={() => setHoveredSkill(null)} // ✅ Hide tooltip on mouse out
             >
-              {skill}
-            </span>
+              <span
+                className="bg-gray-200 text-gray-700 py-1 px-3 rounded-full text-sm cursor-pointer hover:bg-gray-400 hover:text-gray-900 transition-colors duration-200"
+              >
+                {skill}
+              </span>
+
+              {/* ✅ Tooltip (Only visible when hovering) */}
+              {hoveredSkill === skill && (
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-max bg-black text-white text-xs px-3 py-2 rounded shadow-lg z-10">
+                  {skillDescriptions[skill]?.[language] || "Descrição não disponível"}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>
