@@ -17,7 +17,7 @@ A personal portfolio built with **Next.js App Router**, **TypeScript**, and **Ta
 
 ## 🧪 Demo
 
-👉 [https://matheus-abreu-dev.vercel.app](https://matheus-abreu-dev.vercel.app)
+👉 [https://www.matheusabreu.dev/](https://www.matheusabreu.dev/)
 
 ## 🚀 Getting Started
 
@@ -53,7 +53,7 @@ Push to GitHub and deploy with Vercel:
 
 I'm **Matheus Abreu**, a Senior Software Engineer focused on scalable and impactful solutions.
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/matheus-abreu-087768182)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/matheus-abreu-js/)  
 - 💻 [GitHub](https://github.com/matheussla)  
 - ✍️ [Medium](https://medium.com/@matheus.la)  
 - 📫 [Email](mailto:matheus.la1999@gmail.com)
