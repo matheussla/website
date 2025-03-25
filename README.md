@@ -1,42 +1,63 @@
-# Portfolio Blog Starter
+# Matheus Abreu – Portfolio
 
-This is a porfolio site template complete with a blog. Includes:
+A personal portfolio built with **Next.js App Router**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, experience, and blog posts.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+## ✨ Features
 
-## Demo
+- 🧠 MDX + Markdown blog support  
+- 🌐 Bilingual: English & Portuguese  
+- 🔍 SEO optimized (sitemap, robots.txt, JSON-LD schema)  
+- 📰 RSS Feed  
+- 📸 Dynamic Open Graph images  
+- 🎨 Tailwind CSS v4  
+- 🌙 Dark mode support  
+- 🧠 Syntax highlighting  
+- 📈 Vercel Analytics + Speed Insights  
+- 🧠 Fonts from Geist  
 
-https://portfolio-blog-starter.vercel.app
+## 🧪 Demo
 
-## How to Use
+👉 [https://matheus-abreu-dev.vercel.app](https://matheus-abreu-dev.vercel.app)
 
-You can choose from one of the following two methods to use this repository:
+## 🚀 Getting Started
 
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+### 1. Clone the repository
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+git clone https://github.com/matheussla/portfolio.git
+cd portfolio
+pnpm install
 ```
 
-Then, run Next.js in development mode:
+### 2. Run in development
 
 ```bash
 pnpm dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+### 3. Deploy to Vercel
+
+Push to GitHub and deploy with Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js App Router  
+- **Language**: TypeScript  
+- **Styling**: Tailwind CSS v4  
+- **SEO**: robots.txt, sitemap.xml, JSON-LD schema  
+- **Hosting**: Vercel  
+
+## 👨‍💻 About Me
+
+I'm **Matheus Abreu**, a Senior Software Engineer focused on scalable and impactful solutions.
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/matheus-abreu-087768182)  
+- 💻 [GitHub](https://github.com/matheussla)  
+- ✍️ [Medium](https://medium.com/@matheus.la)  
+- 📫 [Email](mailto:matheus.la1999@gmail.com)
+
+## 📄 License
+
+MIT © Matheus Abreu
