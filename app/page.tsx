@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { experiences, skillDescriptions } from './text/xp'
 import { summary } from './text/summary'
@@ -11,10 +11,37 @@ const skills = Array.from(new Set(experiences.flatMap((exp) => exp.skills)))
 export default function Page() {
   const { language } = useLanguage() 
   const [openIndex, setOpenIndex] = useState(0)
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null) // ✅ Track hovered skill
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
+  const [isPrinting, setIsPrinting] = useState(false)
+
+  useEffect(() => {
+    const handleExpandAll = () => {
+      setIsPrinting(true)
+    }
+
+    const handleBeforePrint = () => {
+      setIsPrinting(true)
+    }
+
+    const handleAfterPrint = () => {
+      setIsPrinting(false)
+    }
+
+    window.addEventListener('expandAllAccordions', handleExpandAll)
+    window.addEventListener('beforeprint', handleBeforePrint)
+    window.addEventListener('afterprint', handleAfterPrint)
+
+    return () => {
+      window.removeEventListener('expandAllAccordions', handleExpandAll)
+      window.removeEventListener('beforeprint', handleBeforePrint)
+      window.removeEventListener('afterprint', handleAfterPrint)
+    }
+  }, [])
 
   const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index)
+    if (!isPrinting) {
+      setOpenIndex(openIndex === index ? null : index)
+    }
   }
 
   return (
@@ -71,7 +98,7 @@ export default function Page() {
               <p className="text-sm text-gray-500">{exp.company} • {exp.date}</p>
               <div
                 className={`grid overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  isPrinting || openIndex === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                 }`}
               >
                 <div className="overflow-hidden">

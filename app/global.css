@@ -148,3 +148,74 @@ table {
 .title {
   text-wrap: balance;
 }
+
+@media print {
+  /* Center the entire content */
+  main {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  /* Hide navigation bar */
+  aside {
+    display: none !important;
+  }
+
+  /* Hide footer */
+  footer {
+    display: none !important;
+  }
+
+  /* Hide profile image */
+  img[alt="Matheus Abreu"] {
+    display: none !important;
+  }
+
+  /* Center title and subtitle */
+  .flex.items-center.justify-between {
+    justify-content: center !important;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  /* Ensure all accordion content is visible when printing */
+  .grid-rows-\[0fr\] {
+    grid-template-rows: 1fr !important;
+  }
+  
+  /* Hide print button and other UI elements */
+  button[onClick="handlePrint"],
+  button[onClick="toggleTheme"],
+  button[onClick="toggleLanguage"] {
+    display: none !important;
+  }
+
+  /* Ensure all content is visible when printing */
+  .opacity-0 {
+    opacity: 1 !important;
+  }
+
+  /* Ensure proper text colors in print */
+  .text-gray-400,
+  .text-gray-500,
+  .text-gray-600 {
+    color: #000 !important;
+  }
+
+  /* Ensure proper background colors in print */
+  .bg-gray-200,
+  .bg-gray-300,
+  .bg-gray-400,
+  .bg-gray-700 {
+    background-color: #f5f5f5 !important;
+  }
+
+  /* Ensure proper text colors for dark mode elements in print */
+  .dark\:text-neutral-300,
+  .dark\:text-neutral-200 {
+    color: #000 !important;
+  }
+}

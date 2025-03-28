@@ -19,7 +19,10 @@ export function Navbar() {
     setMounted(true)
   }, [])
 
-  const handlePrint = () => window.print()
+  const handlePrint = () => {
+    window.dispatchEvent(new CustomEvent('expandAllAccordions'))
+    setTimeout(() => window.print(), 100)
+  }
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
@@ -43,20 +46,19 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-        <button
-            onClick={toggleLanguage}
-            className="flex items-center gap-1 text-neutral-700 dark:text-neutral-300 py-1 px-3 rounded-full text-sm cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 hover:text-black dark:hover:text-white transition-colors duration-200"
-          >
-            {language === 'en' ? (
-              <>
-                🇧🇷 <span className="sr-only">Switch to Portuguese</span>
-              </>
-            ) : (
-              <>
-                🇺🇸 <span className="sr-only">Switch to English</span>
-              </>
-            )}
-          </button>
+          <div className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-300 dark:bg-gray-700 transition-colors duration-200">
+            <span className="absolute left-1 text-[10px]">🇺🇸</span>
+            <span className="absolute right-1 text-[10px]">🇧🇷</span>
+            <button
+              onClick={toggleLanguage}
+              className={`${
+                language === 'pt' ? 'translate-x-6' : 'translate-x-1'
+              } inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 flex items-center justify-center text-[10px]`}
+              aria-label={language === 'en' ? 'Switch to Portuguese' : 'Switch to English'}
+            >
+              {language === 'en' ? '🇺🇸' : '🇧🇷'}
+            </button>
+          </div>
 
           <button
             onClick={handlePrint}
