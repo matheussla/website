@@ -2,7 +2,7 @@ export const experiences = [
   {
     title: 'Senior Software Engineer',
     company: 'Procer',
-    date: 'Jun 2024 – Present',
+    date: 'May 2024 – Present',
     description: {
       en: 'I developed technological solutions to automate agricultural services by building scalable APIs with Node.js and TypeScript, designing optimized PostgreSQL databases, implementing RabbitMq for efficient messaging, leveraging AWS for cloud-based scalability and automation, and integrating software seamlessly with agricultural automation devices.',
       pt: 'Desenvolvi soluções tecnológicas para automatizar serviços agrícolas, criando APIs escaláveis com Node.js e TypeScript, projetando bancos de dados PostgreSQL otimizados, implementando RabbitMq para mensageria eficiente, aproveitando AWS para escalabilidade e automação na nuvem, e integrando softwares de forma integrada com dispositivos de automação agrícola.'
@@ -11,18 +11,8 @@ export const experiences = [
   },
   {
     title: 'Senior Software Engineer',
-    company: 'Grupo Mult',
-    date: 'May 2023 – Jun 2024',
-    description: {
-      en: 'I led the development of applications integrating both relational and non-relational databases. In addition to working on the maintenance and evolution of legacy services, I was responsible for technical documentation using Swagger and the implementation of comprehensive automated tests. In terms of architecture, I applied advanced concepts such as Domain-Driven Design (DDD) and SOLID principles to enhance the quality and scalability of the systems. I also played an active role in addressing demands and errors, collaborating effectively with the team to swiftly identify and resolve issues.',
-      pt: 'Liderei o desenvolvimento de aplicações integrando bancos de dados relacionais e não relacionais. Além de trabalhar na manutenção e evolução de serviços legados, fui responsável pela documentação técnica utilizando Swagger e pela implementação de testes automatizados abrangentes. Em termos de arquitetura, apliquei conceitos avançados como Domain-Driven Design (DDD) e os princípios SOLID para aprimorar a qualidade e escalabilidade dos sistemas. Também desempenhei um papel ativo na resolução de demandas e erros, colaborando efetivamente com a equipe para identificar e solucionar problemas rapidamente.'
-    },
-    skills: ['TypeScript', 'PostgreSQL', 'Node.js', 'Prisma', 'Azure', 'RabbitMq', 'Kubernetes', 'Nest.js'],
-  },
-  {
-    title: 'Senior Software Engineer',
     company: 'HYPERY AG',
-    date: 'Jun 2022 – May 2023',
+    date: 'Jun 2022 – May 2024',
     description: {
       en: 'Worked on this crypto project, developing and deploying lambda functions in a serverless environment to enable efficient and scalable data processing, as well as business logic execution. I created and maintained GraphQL services with Node.js to provide flexible and efficient APIs for seamless data retrieval and manipulation. I implemented asynchronous communication patterns, such as message queues, to allow efficient data processing and integration between services. I optimized the system scalability by designing and implementing solutions capable of handling increased loads and accommodating future growth.',
       pt: 'Trabalhei neste projeto de criptomoedas, desenvolvendo e implantando funções lambda em um ambiente serverless para permitir um processamento de dados eficiente e escalável, bem como a execução de lógica de negócios. Criei e mantive serviços GraphQL com Node.js para fornecer APIs flexíveis e eficientes para recuperação e manipulação integrada de dados. Implementei padrões de comunicação assíncrona, como filas de mensagens, para possibilitar um processamento de dados eficiente e a integração entre serviços. Otimizei a escalabilidade do sistema projetando e implementando soluções capazes de lidar com cargas aumentadas e acomodar o crescimento futuro.'
